@@ -34,7 +34,7 @@ BASE_DIR="$PWD";
 # default directory for the new manifest
 MANIFEST_DIR="";
 
-# the twrp minimal manifest
+# the default twrp minimal manifest
 MIN_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git";
 
 # functions to set up things for each supported manifest branch
@@ -50,6 +50,7 @@ do_fox_141() {
 }
 
 do_fox_121() {
+	MIN_MANIFEST="https://github.com/linastorvaldz/platform_manifest_twrp_aosp"
 	BASE_VER=12;
 	FOX_BRANCH="fox_12.1";
 	FOX_DEF_BRANCH="fox_12.1";
